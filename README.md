@@ -32,7 +32,10 @@ Bunboo, bu hassas ortamda adeta bir yabancı gibi. Dev cüssesiyle antika dükk�
 
 ## 🎨 Görseller
 
-_(Buraya oyun içi ekran görüntüleri veya gif’ler ekleyebilirsin)_
+![1](screenshots/SystemReboot1.png)
+![2](screenshots/SystemReboot2.png)
+![3](screenshots/systemReboot3.png)
+![4](screenshots/SystemReboot4.png)
 
 ---
 
