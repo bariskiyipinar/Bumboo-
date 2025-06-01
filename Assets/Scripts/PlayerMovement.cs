@@ -17,6 +17,11 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("IsMoveX", false);
         animator.SetBool("IsMoveZ", false);
         animator.SetBool("IdleBack", false);
+
+        if (SoundManager.instance.BGSound != null)
+        {
+            SoundManager.instance.BGSound.Play();
+        }
     }
 
     void Update()
@@ -25,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
         inputVector.y = Input.GetAxisRaw("Vertical");
         inputVector.Normalize();
 
-        // Sprite yönü
+    
         if (inputVector.x < 0f)
             sp.flipX = true;
         else if (inputVector.x > 0f)
@@ -34,13 +39,13 @@ public class PlayerMovement : MonoBehaviour
         isPressingW = Input.GetKey(KeyCode.W);
         isPressingS = Input.GetKey(KeyCode.S);
 
-        // W býrakýldýðýnda IdleBack çalýþtýr
+       
         if (wasPressingW && !isPressingW && inputVector == Vector2.zero)
         {
             animator.SetBool("IdleBack", true);
             animator.SetBool("IsIdle", false);
         }
-        // S býrakýldýðýnda normal idle'a geç
+      
         else if (wasPressingS && !isPressingS && inputVector == Vector2.zero)
         {
             animator.SetBool("IdleBack", false);
@@ -57,10 +62,10 @@ public class PlayerMovement : MonoBehaviour
         float moveX = inputVector.x * moveSpeed * Time.fixedDeltaTime;
         float moveZ = inputVector.y * moveSpeed * Time.fixedDeltaTime;
 
-        Vector3 move = new Vector3(moveX, 0f, moveZ);
+        Vector3 move = new Vector3(moveX, moveZ,0f );
         transform.position += move;
 
-        // Hareket kontrolleri
+     
         if (Input.GetKey(KeyCode.W))
         {
             animator.SetBool("IsMoveZ", true);
