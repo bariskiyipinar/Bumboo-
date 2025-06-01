@@ -32,10 +32,10 @@ Bunboo, bu hassas ortamda adeta bir yabancı gibi. Dev cüssesiyle antika dükk�
 
 ## 🎨 Görseller
 
-![1](screenshots/SystemReboot1.png)
-![2](screenshots/SystemReboot2.png)
-![3](screenshots/systemReboot3.png)
-![4](screenshots/SystemReboot4.png)
+![1](screenshots/Bumboo1.png)
+![2](screenshots/Bumboo2.png)
+![3](screenshots/Bumboo3.png)
+![4](screenshots/Bumboo4.png)
 
 ---
 
